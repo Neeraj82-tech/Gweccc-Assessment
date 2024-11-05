@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Ensure no default margin */
+  }
+  
+  body {
+    background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+  }
+
+  .about {
+    position: relative;
+    padding: 40px;
+    color: #fff;
+    background-color: #002f4b; /* Dark blue for contrast */
+    text-align: center;
+    overflow: hidden; /* Prevent overflow of waves */
+  }
+  
+  .about .content {
+    position: relative;
+    z-index: 2;
+  }
+  .ocean { 
+    height: 5%; /* Adjust this value for visibility */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871; /* Ocean color */
+  }
+  
+  .wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px; /* Adjust top to show the wave */
+    width: 6400px; /* Wide enough to allow for smooth animation */
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px; /* Adjusted to overlap first wave */
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px; /* Adjusted for smooth scrolling */
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      transform: translate3d(0, 5px, 0);
+    }
+  }
+  

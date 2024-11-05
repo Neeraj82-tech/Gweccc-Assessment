@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.partner-logo {
+  height: 50px;
+}
+
+.header.transparent {
+  background-color: transparent;
+}
+
+.header.solid {
+  background: linear-gradient(190deg, #2d88c0, transparent);
+}
+
+.navItems {
+  display: flex;
+  position: relative;
+  right: 46px;
+}
+
+.navItems a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 10px; /* Reduce padding for a smaller header */
+  }
+  
+  .navItems {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box; /* Prevent overflow from padding */
+    width: auto; /* Avoid extending out of screen */
+  }
+
+  .navItems.open {
+    display: flex;
+    background: linear-gradient(45deg, #3a7cbe, transparent);
+    position: fixed;
+    top: 55px;
+    right: 7px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .logo {
+    height: 40px; /* Adjust logo size for mobile */
+  }
+
+  .partner-logo {
+    height: 40px; /* Adjust partner logo size for mobile */
+  }
+}

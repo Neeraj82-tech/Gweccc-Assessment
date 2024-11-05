@@ -1,0 +1,93 @@
+/* body {
+  font-family: 'Montserrat','Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h1, h2 {
+  color: #0056b3;
+}
+
+header, .banner, .about, .schedule, .register {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+
+button {
+  padding: 12px 25px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+
+@media (max-width: 768px) {
+  header, .banner, .about, .schedule, .register {
+    padding: 20px;
+  }
+} */
+
+
+
+/* General styling inspired by the GWECCC site */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat','Helvetica Neue', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2 {
+  color: #0056b3;
+}
+
+header, .banner, .about, .schedule, .register {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 100vw; /* Keep width to viewport */
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #747bffba;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header, .banner, .about, .schedule, .register {
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden;
+  }
+}
