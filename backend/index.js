@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Configure CORS with the specific origin
 app.use(cors({
-  origin: 'https://gweccc2025-neeraj.netlify.app/', // Replace with your frontend URL
+  origin: '*', // Replace with your frontend URL
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
