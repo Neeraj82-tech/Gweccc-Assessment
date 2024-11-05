@@ -20,7 +20,7 @@ The application uses a live MongoDB database hosted on Render. This database sto
 - API integration to handle registration data.
 - Live database on Render to manage user registrations efficiently.
 
-## Descriptin
+## Description
 
 In designing the GWECCC 2025 Event Promotion Website, I aimed for a clean and user-friendly interface to enhance user engagement. The choice of a responsive layout ensures that users can easily navigate the site on both mobile and desktop devices. I selected visually appealing colors to create an inviting atmosphere. Clear typography and intuitive navigation help users access information effortlessly.
 Challenges included ensuring proper API integration for registration and optimizing the site for various screen sizes. Despite these hurdles, the focus on user experience remained paramount, resulting in a site that effectively promotes the GWECCC 2025 event while maintaining functionality and aesthetics.
